@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Library-Motihari College of Engineering</title>
+	<link rel="icon" type="image/png" href="../../Pictures/Logo.png">
+	 <meta name="viewport"content="width= device-width,initial-scale=1"/>
+<meta http-equiv="Cache-control" content="no-cache,no-store,must-revalidate"/>
+<meta http-equiv="pragma" content="no-cache"/>
+<meta http-equiv="Expires"content="0"/>
+ 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143667410-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-143667410-1');
+</script>
+
+	
+    </head>
+	<body>
+   
+                        <!--Code for Welcome page -->
+
+     
+	
+<script>
+function welcome(){
+    document.getElementById("welcome").style.display="none";
+    document.getElementById("logo").style.display="none";
+    document.getElementById("img").style.display="block";
+    document.getElementById("text-block").style.display="block";
+    
+}
+</script>
+ 
+ 
+                 <!-- Code for Home Page -->
+
+       <img id="img"src="../Pictures/index.png" width="100%"height="800px">
+ 
+     <div class="text-block" id="text-block">
+   
+     <p><input type="button" id="admin"Value="Librarian Login"onclick="window.location.href='../HTML Files/Authorised Login.html';"/>
+      <p><input type="button" id="student"value="Student Login"onclick ="window.location.href='../HTML Files/Student Login.html';"/>
+      
+     <p id="or"></h3> or<p>
+  <input type="button"id="guest"
+  value="Continue as Guest"onclick="window.location.href='../HTML Files/Guest Dashboard.html'">
+</div></div>	   
+
+<script>
+    function student_login(){
+        document.getElementById("img").style.display="none";
+        document.getElementById("text-block").style.display="none";
+        document.getElementById("student_login").style.display="block";
+        document.getElementById("studentLoginHome").style.display="block";
+        document.getElementById("body").style.backgroundImage="url(../Pictures/login.jpg)";
+
+    }
+    </script>
+    
+                                 <!-- HTML Code for Student Login Page -->
+    <script>
+        function Login_navigator(){
+        document.getElementById("student_login").style.display="none";
+        document.getElementById("studentLoginHome").style.display="none";
+        document.getElementById("img").style.display="block";
+        document.getElementById("text-block").style.display="block";  
+        }
+        </script>
+    <div id="Login_navigator">
+        <input type="button" id="studentLoginHome" value="Home"onclick="Login_navigator()"></div>
+    <form method="POST" action="../Student Login.php"id="student_login"><h2>STUDENTS SIGN IN </h2><p>
+	<img src="../Pictures/account.png"height="100px"><p>
+	
+	<input type="text" size="20" name="username"placeholder="Username"required/><p>
+	
+	<input type="password" size="20" name="password"placeholder="Password"required/><p>
+   <input type="rollno"size="20"name="rollno"placeholder="College Roll No."><p>
+	<input id="login_submit"type="submit" value="Login"/>
+	<h3>Not Registered yet.<br> <input type="button" value="Register Now"onclick="window.location.href='../Student Signup.html'"/></form>
+
+    <!--HTML Code for Student SignUp Page -->
+
+   <script>
+       function student_signup(){
+           document.getElementById("student_login").style.display="none";
+           document.getElementById("body").style.backgroundColor="white";
+           document.getElementById("student_signup").style.display="block";
+       }
+       </script>
+	<form action="Student Signup.php" method="POST" id="student_signup"><h3>STUDENT REGISTRATION</h3>
+	<p style="font-size:15px">Register Yourself to avail library facilities.<p>
+	<input type="text"size="12" name="firstname" placeholder="First Name">
+	<input type="text"size="12" name="lastname" placeholder="Last Name"><p>
+	<input type="number" min="5" name="rollno" placeholder="Your College Roll No."><p>
+	<input type="text" size="30" name="username"placeholder="Username"required/><p>
+	<input type="password" size="30"min="8"max="20" name="password" placeholder="Password(Length must be between 8-20.)"required/><p>
+	<input type="repassword"size="30" placeholder="Confirm Password"required/><p>
+	<input type="button" id="submit" value="Register" onclick="window.location.href='../Student Signup.php'"/>
+	<h3>Had Created an Account.<br> <a href="../Student Login.html"> Login Now.</h3></form>
+	
+	
+	ghhjj
+
+<style type="text/css">
+body{width:100%;height:100px;background-color:rgba(9,9,9,0.8);}
+
+.welcome{position:absolute;
+	      text-align:center;
+		  left:20%;
+		  top:70%;
+		  color:white;
+          opacity:1;
+          }
+     @media only screen and (max-width: 900px)
+     {.welcome{font-size:10;}}
+
+#img{display:}
+
+
+.text-block{
+   position:absolute;
+   top:180px;
+   font-weight:bold;
+   font-family:comic sans;
+   color:brown;
+   font-size:120%;
+   width:120%;height:700px;
+     display:      }
+  
+#admin{
+       position:absolute;
+       font-size:30px;
+	   font-weight:bold;
+	   background-color:Violet;
+	   top:10%;
+	   left:15%;
+       }
+#student{
+	   position:absolute;
+       font-size:30px;
+	   font-weight:bold;
+	   background-color:rgb(19,242,136);
+	   top:25%;
+	   left:15%;
+	   }
+#guest{
+		position:absolute;
+	   font-size:30px;
+	   font-weight:bold;
+	   background-color:yellow;
+	   top:50%;
+	   left:15%;
+	   }
+#or{font-size:30px;
+    top:35%;
+    left:30%;
+    position:absolute}
+ 
+ .name{width:300px;
+       align:center;}
+ table{width:100%;
+       border:0.5px solid black;
+       top:100px;}
+
+                                         /* CSS Code for Student Login Page*/
+     
+     #student_login {
+		 position:absolute;
+         border-style:double;
+	      border-width:0.5px;
+		min-width:30%;
+         height:auto;
+		  left:10%;
+		  top:20%;
+		  background-color:#07F0CC;
+		  font-weight:bold;
+		  text-align:center;
+          display:none;}
+#login_submit{
+            font-size:20px;
+			font-weight:bold;
+			
+			background-color:yellow;
+			border-radius:25px; 
+			border:2px solid black;
+			border-style:double;}
+            
+                                        /* CSS Code for Student Signup Page */
+
+
+  #student_signup {
+		 position:absolute;
+         border-style:double;
+	      border-width:0.5px;
+		  max-width:400px;
+		 left:8%;
+		  top:20%;
+		  background-color:#07F0CC;
+		  font-weight:bold;
+		  text-align:center;
+          display:none;}
+  
+  #signup_submit{
+            font-size:20px;
+			font-weight:bold;
+			color:white;
+			background-color:green;
+			border-radius:25px; 
+			border:2px solid black;
+			border-style:double;}
+    h3{text-decoration:underline;}

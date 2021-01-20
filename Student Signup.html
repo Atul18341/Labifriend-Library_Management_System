@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head >
+    <title>Library-Motihari College of Engineering</title>
+	<link rel="icon"type="image/png"href="../Pictures/Logo.png">
+   <meta name="viewport"content="width= device-width,initial-scale=1"/>
+  
+	</head>
+	<body>
+	<form action="../Student Signup.php" method="POST" id="signup"><h3>STUDENT REGISTRATION</h3>
+	<p style="font-size:15px">Register Yourself to avail library facilities.<p>
+	<input type="text"size="12" name="firstname" placeholder="First Name">
+	<input type="text"size="12" name="lastname" placeholder="Last Name"><p>
+	<input type="number" min="5" name="rollno" placeholder="Your College Roll No."><p>
+	<input type="text" size="30" name="username"placeholder="Username"required/><p>
+	<input type="password" size="30"min="8"max="20" name="password" placeholder="Password only numbers(Length must be between 8-20.)"required/><p>
+	<input type="repassword"size="30" placeholder="Confirm Password"required/><p>
+	<input type="submit" id="submit" value="submit">
+	<h3>Had Created an Account.<br> <a href="../Student Login.html"> Login Now.</a></h3></form>
+    
+    </body>
+	
+	
+	
+	<style type="text/css">
+ 
+ 
+#signup {
+		 position:absolute;
+         border-style:double;
+	      border-width:0.5px;
+		  max-width:400px;
+		 left:8%;
+		  top:20%;
+		  background-color:#07F0CC;
+		  font-weight:bold;
+		  text-align:center;}
+#submit{
+            font-size:20px;
+			font-weight:bold;
+			color:white;
+			background-color:green;
+			border-radius:25px; 
+			border:2px solid black;
+			border-style:double;}
+    h3{text-decoration:underline;}
